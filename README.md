@@ -1,4 +1,4 @@
 # -Daily-Python-practices
-Just an initial concept of a programmer who is clearly lost
+I am learning python in videos of a basic ''course'', and put here my exercises, which I practice every day.
 
 These files are my daily practices
