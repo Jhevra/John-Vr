@@ -13,10 +13,10 @@ while True:
         break
 
 print('-='*35)
-print(f'''Você dígitou {len(lista)} elementos
-Os valores dígitados em ordem decresente: {sorted(lista, reverse=True)}''')
+print(f'''Foram dígitados {len(lista)} valores
+A lista de valores em ordem decrescente: {sorted(lista, reverse=True)}''')
 
 if 5 in lista:
-    print(f'\033[32;1mO número 5 faz parte da lista\033[m')
+    print(f'O valor 5 faz parte da lista')
 else:
-    print(f'\033[31;1mO número 5 não faz parte da lista\033[m')
+    print(f'O valor 5 não faz parte da lista')

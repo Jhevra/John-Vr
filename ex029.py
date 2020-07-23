@@ -1,9 +1,14 @@
-print(f'''\033[40;31;1m{"Desafio 29":=^20}\033[m\n\033[33;1m{"Radar":^20}\033[m
-{"Bem Vindo ao Radar":-^30}''')
-velocidade = float(input('Digite a velocidade que o carro estava: '))
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 29', 'MULTARRrr')
+
+velocidade = int(input('Qual é a velocidade atual do carro? '))
+multa = (velocidade - 80) * 7
+
 if velocidade > 80:
-    print(f'''Sua multa é de \033[31;1mR${(velocidade-80)*7:.2f}\033[m
-Preste mais atenção no transito!''')
+    print(f'''\033[31mMULTADO! Você execeu o limite permitido que é de 80Km/h.
+Você deve pagar uma multa de\033[m \033[33mR${multa:.2f}!\033[m''')
+
 else:
-    print(f'\033[32;1mVocê não recebeu multa, lembre de sempre usar cinto de segurança!\033[m')
-print('\033[33;1mTenha um bom dia!\033[m')
+    print(f'\033[32mParabéns, você está dentro do limite permitido.\033[m')
+
+print(f'\033[32;1mTenha um bom dia! Dirija com segurança!\033[m')

@@ -1,10 +1,10 @@
 print(f'\033[40;33;1m{"Desafio 86":=^20}\033[m\n\033[40;31;1m{"MATRIZZ":^20}\033[m')
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-for linha in range(0, 3):
-    for coluna in range(0, 3):
-        matriz[linha][coluna] = int(input(f'Dígite um valor para [{linha}:{coluna}]'))
+for l in range(3):
+    for c in range(3):
+        matriz[l][c] = int(input(f'Número para [{l}, {c}]: '))
 print('-='*35)
-for linha in range(0, 3):
-    for coluna in range(0, 3):
-        print(f'[{matriz[linha][coluna]:^5}]', end=' ')
+for l in range(3):
+    for c in range(3):
+        print(f'[{matriz[l][c]:^5}]', end=' ')
     print()

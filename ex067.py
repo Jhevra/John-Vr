@@ -1,12 +1,18 @@
-print(f'\033[40;33;1m{"Desafio 67":=^20}\033[m\n\033[40;31;1m{"TABUDAOR":^20}\033[m')
-cont = 1
+from funções.UtilidadesCev.Dados import cabecalho
+
+cabecalho('Desafio 67', 'TabuadaRRrr')
+
+
 while True:
-    print('-'*20)
-    tabs = int(input('Dígite um valor: '))
-    print('-'*20)
-    if tabs < 0:
+    n = 1
+
+    print('-'*40)
+    valor = int(input('Número: '))
+    print('-' * 40)
+    if valor < 0:
+        print(f'\033[31mERRO! NÚMERO NEGATIVO DÍGITADO!\033[m')
         break
-    for cont in range(1, 11):
-        print(f'{tabs} X {cont} = {tabs*cont}')
-    cont += 1
-print('\033[31;1mERRO! NÚMERO NEGATIVO DETECTADO\033[m')
+
+    while n != 11:
+        print(f'{valor} x {n:<2} = {valor*n:<1}')
+        n += 1

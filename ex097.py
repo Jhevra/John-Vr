@@ -1,11 +1,5 @@
-print(f'\033[40;33;1m{"Desafio 97":=^100}\033[m\n\033[40;31;1m{"ESCREVARRr":^100}\033[m')
-
-
-def escreva(msg):
-    tam = len(msg) + 4
-    print('~' * tam)
-    print(f'  {msg}')
-    print('~' * tam)
+from funções.UtilidadesCev.Dados import cabecalho
+from funções.UtilidadesCev.Functions import escreva
 
 
 escreva('\033[31;1mOlá, Mundo!\033[m')

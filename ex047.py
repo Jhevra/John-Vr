@@ -1,9 +1,7 @@
-print(f'''\033[40;31;1m{"Desafio 47":=^20}\033[m\n\033[33;1m{"PARR":^20}\033[m''')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 47', 'CONTARRrr PARRrr')
 
-# for cont in range(0, 51, 2):
-#     print(cont, end=' ==>')
+for c in range(2, 52, 2):
+    print(c, end=' ')
+print('=== Acabou!')
 
-for cont in range(0, 51):
-    if cont % 2 == 0:
-        print(cont, end=' ==> ')
-print('Acabou')

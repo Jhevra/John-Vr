@@ -1,4 +1,10 @@
-import random, math
-print(f'{"Desafio 16":=^20}\n{"Inteirador"}')
-num = random.uniform(1.5, 100.5)
-print(f'De \033[0;31;1m{num:.3f}\033[m para, \033[0;32;1m{math.trunc(num)}\033[m')
+from funções.UtilidadesCev.Dados import cabecalho
+from math import trunc
+
+
+cabecalho('Desafio 16', 'Quebrando TOTALMENTE ISAAC NEWTON')
+
+valor = float(input('Dígite um valor: '))
+print(f'O valor dígitado foi {valor} e sua porção inteira é {int(valor)}')
+
+print(f'O valor digitado foi {valor} e sua porção inteira {trunc(valor)}')

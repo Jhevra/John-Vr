@@ -1,21 +1,25 @@
-print(f'\033[40;31;1m{"Desafio 28":=^20}\033[m\n\033[33;1m{"Adivinhador":^20}\033[m')
-print(f'''\033[34;1m{"-"*200}\033[m
-\033[33;1mEstou pensando em um numero de\033[m \033[32;1m0\033[m \033[33;1ma \033[31;1m5\033[m\033[33;1m, 
-Adivinhe...\033[m 
-\033[34;1m{"-"*200}\033[m''')
-chute = int(input('O numero é... '))
-if chute == 0:
-    print('\033[31;1mErrou! otario\033[m')
-elif chute == 1:
-    print('\033[32;1mAcertou! caralho... tu é brabo\033[m')
-elif chute == 2:
-    print('\033[31;1mErrou! otario\033[m')
-elif chute == 3:
-    print('\033[31;1mErrou! otario\033[m')
-elif chute == 4:
-    print('\033[31;1mErrou! otario\033[m')
-elif chute == 5:
-    print('\033[31;1mErrou! otario\033[m')
-else:
-    print('Amigão... tu é idiota é de 0 a 5')
-print(f'{"Fim":=^20}')
+from funções.UtilidadesCev.Dados import cabecalho
+from random import randint
+cabecalho('Desafio 28', 'Tenta SORTERRrr')
+
+numero = randint(0, 5)
+
+print('\033[33;1m-=\033[m'*45)
+print('\033[36mVou pensar em um número entre 0 e 5. Tente adivinhar...\033[m')
+print('\033[33;1m-=\033[m'*45)
+
+chute = int(input('Em que número eu pensei? '))
+
+while True:
+    if chute > 5:
+        print(f'\033[32;1mOh AMIGÃO... é entre 0 e 5. ¬¬\033[m')
+        chute = int(input('Em que número eu pensei? '))
+
+    elif chute != numero:
+        print(f'''\033[31mIIIIIHHH ALA ERRO OTARIO\033[m
+\033[33mO número que eu pensei era {numero}\033[m''')
+        break
+
+    else:
+        print('\033[32mAcertou, parabéns hein amigo.\033[m')
+        break

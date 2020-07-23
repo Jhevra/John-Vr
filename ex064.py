@@ -1,15 +1,12 @@
-print(f'\033[40;33;1m{"Desafio 64":=^20}\033[m\n\033[40;31;1m{"999er":^20}\033[m')
-cont = soma = tot = 0
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 64', 'TRATARRrr')
 
-while cont != 999:
+s = nums = n = 0
 
-    valor = int(input('Dígite o primeiro valor, ou, dígite [999] para parar: '))
-    tot += 1
-
-    if valor == 999:
-        tot -= 1
+while n != 999:
+    if n == 999:
         break
-
-    soma += valor
-
-print(f'A soma de todos os valores foi de {soma}, foram dígitados {tot} valores')
+    n = int(input('Dígite um valor [999 para sair]: '))
+    nums += 1
+    s += n
+print(f'Foram {nums-1} números, e a soma deles foi de {s-999}')

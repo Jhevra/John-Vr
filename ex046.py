@@ -1,8 +1,9 @@
-from time import sleep
-print(f'''\033[40;31;1m{"Desafio 46":=^20}\033[m\n\033[33;1m{"ANONOVOR":^20}\033[m''')
-for fogos in range(1, 10):
-    print(f'{fogos}...')
+from funções.UtilidadesCev.Dados import cabecalho
+from  time import sleep
+cabecalho('Desafio 46', 'CONTARRrr')
+
+for cont in range(10, -1, -1):
+    print(cont)
     sleep(1)
-print(f'''*******************************
-              BUM!
-*******************************''')
+
+print('BUM! BUM! POW!')

@@ -1,8 +1,9 @@
-print(f'''\033[40;31;1m{"Desafio 47":=^20}\033[m\n\033[33;1m{"IMPARR":^20}\033[m''')
-soma = tot = 0
-for cont in range(1, 500):
-    if cont % 2 == 1:
-        if cont % 3 == 0:
-            soma += cont
-            tot += 1
-print(f'A soma dos {tot} valores solicitados foi de {soma}')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 48', 'CONTARRrr E SOMARRrr')
+s = 0
+
+for c in range(1, 501, 2):
+    print(c)
+    if c % 3 == 0:
+        s += c
+print(f'A soma de todos os multiplos de 3, foi de {s}')

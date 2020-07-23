@@ -1,12 +1,16 @@
 from datetime import date
-print(f'\033[40;33;1m{"Desafio 54":=^20}\033[m\n\033[40;31;1m{"NASCIMENTOR":^20}\033[m')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 54', 'MAIORRrrRIDADERRrr')
+
 maior = menor = 0
-for cont in range(1, 8):
-    ano = int(input(f'Dígite o ano de nascimento da {cont}º pessoa: '))
-    cont += 1
-    if date.today().year - ano > 18:
-        maior+= 1
+
+for c in range(7):
+    nasc = int(input(f'Em que ano a {c+1}º pessoa nasceu? '))
+    idade = date.today().year - nasc
+    if idade >= 18:
+        maior += 1
     else:
         menor += 1
-print(f'''Foi o total de \033[36;1m{maior} pessoas maiores\033[m de idade
-E \033[33;1m{menor} menores\033[m de idade''')
+
+print(f'''Ao todo são {maior} maiores de idade
+E {menor} menores de idade''')

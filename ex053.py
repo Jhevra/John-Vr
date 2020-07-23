@@ -1,4 +1,5 @@
-print(f'\033[40;33;1m{"Desafio 53":=^20}\033[m\n\033[40;31;1m{"PALINDROMOR":^20}\033[m')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 53', 'PALINDROMORRrr')
 frase = input('Dígite uma frase: ').strip().upper()
 palavras = frase.split()
 junto = ''.join(palavras)

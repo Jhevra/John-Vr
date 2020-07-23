@@ -1,11 +1,10 @@
-print(f'\033[40;33;1m{"Desafio 85":=^20}\033[m\n\033[40;31;1m{"LISTARARAR":^20}\033[m')
+print(f'\033[40;33;1m{"Desafio 85":=^100}\033[m\n\033[40;31;1m{"LISTARARAR":^100}\033[m')
 lista = [[], []]
-for c in range(0, 7):
-    numeros = int(input('Dígite um valor: '))
-    if numeros % 2 == 0:
-        lista[0].append(numeros)
-    else:
-        lista[1].append(numeros)
-print('-='*55)
-print(f'''Os valores pares dígitados foram: \033[32;1m{sorted(lista[0])}\033[m
-Os valores ímpares dígitados foram: \033[31;1m{sorted(lista[1])}\033[m''')
+for cont in range(7):
+    num = int(input(f'{cont+1}º Number: '))
+    if num % 2 == 0:
+        lista[0].append(num)
+    if num % 2 == 1:
+        lista[1].append(num)
+print(f'''List of even numbers: {sorted(lista[0])}
+List of odd numbers: {sorted(lista[1])}''')

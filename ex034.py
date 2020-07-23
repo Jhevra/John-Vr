@@ -1,6 +1,11 @@
-print(f'''\033[40;31;1m{"Desafio 34":=^20}\033[m\n\033[33;1m{"Ajustador":^20}\033[m''')
-salario = float(input('Digite seu salário: '))
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 34', 'AUMENTORRrr')
+
+salario = float(input('Qual é o salario do funcionario? R$'))
+
 if salario > 1250:
-    print(f'Seu aumento foi de R${(salario*10)/100:.2f}, Seu salário ficara R${(salario*10)/100+salario:.2f}')
+    aumento = (salario*10)/100
 else:
-    print(f'Seu aumento foi de R${(salario*15)/100:.2f}, Seu salário ficara R${(salario*15)/100+salario:.2f}')
+    aumento = (salario*15)/100
+
+print(f'Quem ganhava R${salario:.2f} passa a ganhar R${aumento+salario:.2f} agora.')

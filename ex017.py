@@ -1,7 +1,12 @@
-import random, math
-print(f'{"Desafio 17":=^20}\n\033[40;31;1m{"Catetor":^20}\033[m')
-oposto = float(random.uniform(0.1, 100.001))
-adjacente = float(random.uniform(0.1, 100.001))
-print(f'''Valor do oposto: \033[33;1m{oposto:.3f}\033[m
-Valor do adjacente \033[33;1m{adjacente:.3f}\033[m''')
-print(f'O valor da Hipotenusa concide em \033[32;1m{math.hypot(oposto, adjacente):.3f}\033[m')
+from math import hypot
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 17', 'HIPOTENUSA DO MEU PAU')
+
+oposto = (input('Comprimento do cateto oposto: ')).replace(',', '.')
+oposto = float(oposto)
+adjascente = (input('Comprimento do cateto adjacente: ')).replace(',', '.')
+adjascente = float(adjascente)
+
+print('-'*45)
+
+print(f'A hipotenusa vai medir \033[33m{hypot(oposto, adjascente):.3f}\033[m')

@@ -15,9 +15,8 @@ while True:
 for valor in lista:
     if valor % 2 == 0:
         listapar.append(valor)
-    if valor % 2 == 1:
+    else:
         listaimp.append(valor)
-
 print(f'''A lista completa de valores é {sorted(lista)}
 A lista de valores pares é {sorted(listapar)}
 A lista de valores ímpares é {sorted(listaimp)}''')

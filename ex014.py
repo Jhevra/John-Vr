@@ -1,3 +1,4 @@
-print(f'''\033[40;33;1m{"Desafio 14":=^20}\033[m\n{"Conversor de Temperaturas"}''')
-celsius = float(input('Digite o valor em ºC, que sera convertido em ºF: '))
-print(f'''\033[0;32;1m{celsius}\033[mºC é exatamente \033[0;31;1m{(celsius*9/5)+32}\033[mºF''')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 14', 'TA QUENTE AI?')
+celsius = float(input('Informe a temperatura em ºC: '))
+print(f'A temperatura de \033[31;1m{celsius}ºC\033[m corresponde a \033[33;1m{(celsius * 9/5)+32}ºF\033[m.')

@@ -1,4 +1,5 @@
-print(f'\033[40;33;1m{"Desafio 61":=^20}\033[m\n\033[40;31;1m{"P.Ar":^20}\033[m')
+from funções.UtilidadesCev.Dados import  cabecalho
+cabecalho('Desafio 60', 'P.A RRrr')
 primeiro = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razão: '))
 cont = 0

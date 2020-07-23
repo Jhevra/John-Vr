@@ -1,3 +1,5 @@
-print(f'{"Desafio 10":=^25}\n{"Conversor de Dolar":^}')
-reais = float(input('Digite a quantidade de dolares você possui: >>> '))
-print(f'Você pode comprar ${reais/5.12:.2f} com R${reais}')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 10', 'DolaRRrr')
+
+real = float(input('Quanto dinheiro você tem na carteira? R$'))
+print(f'Com R${real} você pode comprar US${real*5.31:.2f}')

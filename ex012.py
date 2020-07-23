@@ -1,4 +1,8 @@
-print('{:=^20}\n'.format('Desafio 12'), 'Calculador de Desconto (%5)')
-precototal = float(input('Digite o valor do produto: '))
-desconto = float((precototal*5)/100)
-print('usando o cupom ´AAHHH´ o produto que era R${:.2f},ficando assim R${:.2f}, ou seja, você ganhou R${:.2f} de desconto.'.format(precototal, precototal-desconto, desconto))
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 12', 'DescontoRRrr')
+
+valor = float(input('Qual é o preço do produto? R$'))
+
+desconto = (valor*5)/100
+
+print(f'O produto que custava R${valor:.2f}, na promoção com desconto de 5% vai custa R${valor-desconto:.2f}')

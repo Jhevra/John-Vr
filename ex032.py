@@ -1,6 +1,8 @@
 from datetime import date
+from funções.UtilidadesCev.Dados import cabecalho
 
-print(f'''\033[40;31;1m{"Desafio 32":=^20}\033[m\n\033[33;1m{"Ano Bissexto":^20}\033[m''')
+cabecalho('Desafio 32', 'ANORRrr')
+
 ano = int(input('Qual ano será analisado (coloque 0 para ser analisado o ano atual) : '))
 if ano == 0:
     ano = date.today().year

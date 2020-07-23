@@ -1,10 +1,10 @@
-print(f'''\033[40;31;1m{"Desafio 50":=^20}\033[m\n\033[33;1m{"PAREADOR":^20}\033[m''')
-somaimp = soma = impar = par = 0
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 50', 'SOMARRrr PARRrr')
+soma = 0
 
-for cont in range(1, 7):
-    nums = int(input('Dígite um número: '))
-    if nums % 2 == 0:
-        soma += nums
-    else:
-        somaimp += nums
-print(f'A soma dos números pares foi de \033[32;1m{soma}\033[m e dos números ímpares foi de \033[31;1m{somaimp}\033[m')
+for c in range(6):
+    valor = int(input(f'{c+1}º valor: '))
+    if valor % 2 == 0:
+        soma += valor
+print('-'*45)
+print(f'A soma dos valores pares foi \033[35m{soma}\033[m')

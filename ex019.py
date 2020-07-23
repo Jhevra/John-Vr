@@ -1,9 +1,10 @@
 from random import choice
+from funções.UtilidadesCev.Dados import cabecalho
+turma = list()
+cabecalho('Desafio 19', 'ORDERNARRRrr')
 
-print(f'\033[40;31;1m{"Desafio 19":=^20}\033[m\n\033[33;1m{"PlAvraR":^20}\033[m')
-aluno1 = input('Nome do 1º aluno: ')
-aluno2 = input('Nome do 2º aluno: ')
-aluno3 = input('Nome do 3º aluno: ')
-aluno4 = input('Nome do 4º aluno: ')
-mylist = [aluno4, aluno3, aluno2, aluno1]
-print(f'O aluno escolhido foi o \033[34;1m{choice(mylist)}\033[m')
+for alunos in range(1, 5):
+    turma.append(input(f'{alunos}º aluno: '))
+
+print('-'*45)
+print(f'O aluno sorteado foi {choice(turma)}')

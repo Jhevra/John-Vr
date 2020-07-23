@@ -1,13 +1,14 @@
 print(f'''\033[40;31;1m{"Desafio 90":=^20}\033[m\n\033[33;1m{"MEDIARRR":^20}\033[m''')
 ficha = dict()
-ficha['Nome'] = input('Nome: ').strip()
-ficha['Média'] = float(input('Medía: '))
+ficha['Nome'] = input('Nome: ')
+ficha['Média'] = float(input(f'Média de {ficha["Nome"]}: '))
+
 print('-='*35)
 
-if ficha['Média'] >= 6:
-    print(f'''O estado do aluno \033[33;1m{ficha["Nome"]}\033[m é \033[32;1mAPROVADO\033[m
-Média = \033[32;1m{ficha["Média"]}\033[m''')
-
+if ficha['Média'] > 6:
+    ficha['Situação'] = 'Aprovado'
 else:
-    print(f'''O estado do aluno \033[33;1m{ficha["Média"]}\033[m é \033[31;1mREPROVADO\033[m
-Média = \033[31;1m{ficha["Média"]}\033[m''')
+    ficha['Situação'] = 'Reprovado'
+
+for k, v in ficha.items():
+    print(f'    ==> {k} tem valor {v}')

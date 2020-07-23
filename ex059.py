@@ -1,36 +1,44 @@
-from time import sleep
-print(f'''\033[40;31;1m{"Desafio 59":=^20}\033[m\n\033[33;1m{"MENUR":^20}\033[m''')
-lista = list()
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 59', 'CriaRRrr Menu')
 
-for cont in range(0, 2):
-    lista.append(int(input('Dígite um valor: ')))
+lista = []
 
-opcao = 0
+for c in range(2):
+    lista.append(int(input(f'{c+1}º valor: ')))
 
-while opcao != 5:
-    opcao = int(input('''[1] SOMAR
-[2] MULTIPLICAR
-[3] MAIOR
-[4] NOVOS NUMEROS
-[5] SAIR
-Escolha uma opção: '''))
-    print('-'*20)
+opc = maior = 0
 
-    if opcao == 1:
-        print(lista[0] + lista[1], '\n')
-        print('-'*20)
+while opc != 5:
+    print('-='*30)
+    opc = int(input(f'''    [ 1 ] SOMAR
+    [ 2 ] MULTIPLICAR
+    [ 3 ] MAIOR
+    [ 4 ] NOVOS NÚMEROS
+    [ 5 ] SAIR DO PROGRAMA
+>>>>> Qual é a sua opcão? '''))
+    print('-'*30)
 
-    elif opcao == 2:
-        print(lista[0] * lista[1], '\n')
-        print('-' * 20)
+    if opc == 1:
+        somar = lista[0] + lista[1]
+        print(f'{lista[0]} + {lista[1]} = {somar}')
+        print('-' * 30)
 
-    elif opcao == 3:
-        print(max(lista), '\n')
-        print('-' * 20)
+    elif opc == 2:
+        mult = lista[0] * lista[1]
+        print(f'{lista[0]} * {lista[1]} = {mult}')
+        print('-' * 30)
 
-    elif opcao == 4:
+    elif opc == 3:
+        print(f'O maior número foi {max(lista)}')
+        print('-' * 30)
+
+    elif opc == 4:
         lista.remove(lista[0])
         lista.remove(lista[0])
-        lista.append(int(input('Dígite um novo valor: ')))
-        lista.append(int(input('Dígite um novo valor: ')))
-        print('-' * 20)
+        for cont in range(2):
+            lista.append(int(input(f'{cont+1}º valor: ')))
+        print('-' * 30)
+
+    else:
+        print(f'\033[31;1m ===== FECHANDO.... =====\033[m')
+        break

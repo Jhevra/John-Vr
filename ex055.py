@@ -1,6 +1,19 @@
-print(f'\033[40;33;1m{"Desafio 55":=^20}\033[m\n\033[40;31;1m{"PESOR":^20}\033[m')
-lista = list()
-for pessoa in range(1, 6):
-    lista.append(float(input(f'Dígite o peso da {pessoa}º pessoa: ')))
-print(f'''O menor peso entre as pessoas foi de {min(lista)}Kg 
-E o maior foi de {max(lista)}Kg''')
+from funções.UtilidadesCev.Dados import cabecalho
+cabecalho('Desafio 55', 'MENORRrr e MAIORRrr')
+
+maior = menor = 0
+
+for pessoa in range(5):
+    p = float(input(f'Peso da {pessoa+1}º: '))
+    if pessoa == 0:
+        maior = menor = p
+    else:
+        if p > maior:
+            maior = p
+
+        if p < menor:
+            menor = p
+
+print('-'*45)
+print(f'''O maior peso foi: {maior}Kg
+E o menor peso foi: {menor}Kg''')

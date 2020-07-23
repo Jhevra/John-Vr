@@ -1,20 +1,23 @@
+from funções.UtilidadesCev.Dados import cabecalho
 from time import sleep
-print(f'''\033[40;31;1m{"Desafio 37":=^20}\033[m\n\033[33;1m{"Conversor":^20}\033[m''')
-num = int(input('Digite um numero inteiro: '))
-print('''Escolha uma das bases para conversão: 
-[1] Binario
-[2] Octal
-[3] Hexadecimal ''')
-opcao = int(input('Sua opção: '))
-print('-='*20)
-print(f'{"Analisando...":^40}')
-print('-='*20)
-sleep(1)
-if opcao == 1:
-    print(f'\033[33;1m{num}\033[m converstido para a base binaria é \033[32;1m{bin(num)}\033[m')
-elif opcao == 2:
-    print(f'\033[33;1m{num}\033[m convertido para a base octal é \033[32;1m{oct(num)}\033[m')
-elif opcao == 3:
-    print(f'\033[33;1m{num}\033[m convertido para a base hexadecimal é \033[32;1m{hex(num)}\033[m')
+
+cabecalho('Desafio 37', 'ConversoRRrr')
+
+numero = int(input('Dígite um número inteiro: '))
+
+print(f'''Escolha uma das bases para conversão:
+[ 1 ] CONVERTER PARA BINÁRIO
+[ 2 ] CONVERTER PARA OCTAL
+[ 3 ] CONVERTER PARA HEXADECIMAL''')
+
+opc = int(input('Sua opção: '))
+
+if opc == 1:
+    print(f'\033[34m{numero} convertido para BINÁRIO é igual a {bin(numero)}\033[m')
+elif opc == 2:
+    print(f'\033[34m{numero} convertido para OCTAL é igual a {oct(numero)}\033[m')
+elif opc == 3:
+    print(f'\033[34m{numero} convertido para HEXADECIMAL é igual a {hex(numero)}\033[m')
 else:
-    print('\033[31;1mOpção INVÁLIDA!\033[m')
+    print(f'\033[31mERRO! ----- FECHANDO O SISTEMA.... -----\033[m')
+    sleep(0.5)

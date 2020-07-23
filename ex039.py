@@ -1,13 +1,24 @@
-from datetime import date
+from funções.UtilidadesCev.Dados import cabecalho
+from datetime import datetime
 
-print(f'''\033[40;31;1m{"Desafio 39":=^20}\033[m\n\033[33;1m{"Alistador":^20}\033[m''')
-nascimento = int(input('Em que ano você nasceu? '))
-idade = date.today().year - nascimento
-if idade == 17:
-    print('Está na hora de se alistar!')
-elif idade < 17:
-    print('Ainda não na hora jovem!')
-    print(f'Falta {17 - idade} anos')
+cabecalho('Desafio 39', 'ALISTARRrr')
+
+ano = int(input('Ano de nascimento: '))
+idade = datetime.today().year - ano
+
+if idade > 18:
+    print('-'*45)
+    print(f'''Quem nasceu em {ano} tem {idade} anos em {datetime.today().year}.
+Você ja deveria ter se alistado há {idade - 18} anos. 
+\033[31mSeu alistamento foi em {datetime.today().year - (idade - 18)}.\033[m''')
+
+elif idade == 18:
+    print('-'*45)
+    print(f'''Quem nasceu em {ano} tem {idade} anos em {datetime.today().year}.
+\033[33mVocê tem que se alistar IMEDIATAMENTE!\033[m''')
+
 else:
-    print('Ja passou da hora.')
-    print(f'Faz {idade - 17}')
+    print('-' * 45)
+    print(f'''Quem nasceu em {ano} tem {idade} anos em {datetime.today().year}.
+\033[34mSeu alistamento sera daqui há {18 - idade} anos em {datetime.today().year + (18 - idade)}.\033[m''')
+

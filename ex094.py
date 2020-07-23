@@ -4,6 +4,7 @@ pessoas = dict()
 media = 0
 
 while True:
+
     pessoas.clear()
     pessoas['Nome'] = input('Nome: ')
     pessoas['Sexo'] = input('Sexo [M/F]: ').strip().upper()
@@ -11,33 +12,29 @@ while True:
         pessoas['Sexo'] = input('\033[31;1mERRO!\033[m Sexo [M/F]: ').strip().upper()
     pessoas['Idade'] = int(input('Idade: '))
     media += pessoas['Idade']
-    resp = input('Quer continuar ? [S/N]: ').upper().strip()
     sala.append(pessoas.copy())
-    while resp[0] != 'S' and resp[0] != 'N':
-        resp = input('\033[31;1mERRO!\033[m Quer continuar ? [S/N]: ').strip().upper()
-    if resp[0] == 'N':
+    res = input('Quer continuar? [S/N]: ').upper().strip()
+    while res[0] != 'S' and res[0] != 'N':
+        res = input('\033[31;1mERRO!\033[m Quer continuar? [S/N]: ').strip().upper()
+    if res[0] == 'N':
         break
 media = media / len(sala)
-
-print('-='*35)
 print(sala)
 
+print('-='*45)
 # FIM DA LEITURA DE DADOS
-
-print('-='*35)
-print(f'''A) Ao todo temos {len(sala)}  pessoas cadastradas.
-B) A média de idade é de {media}
-C) As mulheres cadastradas foram''', end=' ')
+print(f'''A) Ao todo temos {len(sala)} pessoas cadastradas.
+B) A média de idade é de {media:.2f} anos.
+C) As mulheres cadastradas foram ''', end='')
 for p in sala:
-    if p['Sexo'] == 'F':
+    if p["Sexo"] == 'F':
         print(f'[{p["Nome"]}]', end=' ')
-
 print()
-print(f'D) Lista das pessoas com idade acima da media: ')
+print(f'D) Lista das pessoas que estão acima da média:')
 for p in sala:
-    if p['Idade'] >= media:
+    if p['Idade'] > media:
         print('     ', end=' ')
         for k, v in p.items():
-            print(f'{k} = {v}; ', end='')
+            print(f'{k} = {v}; ', end=' ')
         print()
-print('<<< ENCERRADO >>>')
+print('     <<< ENCERRADO >>>       ')
