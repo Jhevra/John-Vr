@@ -8,10 +8,12 @@ There are some exercises that I was unable to complete, perhaps due to lack of c
 
 I still don't know how to use all the tools and options on github, so I'm sorry, for anything.
 
-These files are my daily practices
+These files are my daily practices.
+
+I used Pycharm Community Edition (From JetBrains) to make the exercises during the course.  
 
 ## Special thanks
 
 Special thanks to **Gustavo Guanabara** and his Python videos that have already taught me a lot.
 
-And to everyone from **DIO**(Digital Innovation One)
+And to everyone from **DIO** (Digital Innovation One)
