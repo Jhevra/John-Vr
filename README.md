@@ -12,7 +12,7 @@ These files are my daily practices.
 
 I used Pycharm Community Edition (From JetBrains) to make the exercises during the course.
 
-[![Pycharm](https://resources.jetbrains.com/storage/products/pycharm-edu/img/meta/pycharm-edu_logo_300x300.png "Pycharm")](https://www.jetbrains.com/pt-br/pycharm/download/#section=windows "Pycharm")
+[![Pycharm](https://lh3.googleusercontent.com/proxy/03ZfjyrL38Ksd9upS4Gz-mhMx3Zp14fsRhGoYxoMaI7lTM10D43ONI1X6jCtUtl2872kupPNJXjK6yRl5Vlh1VVDrZrosZEDvuO0hs2xbaY9QMktW3S1fRYR2P_QrKSaPsmifoR0zRa_xhUYjZBFwg "Pycharm")](https://www.jetbrains.com/pt-br/pycharm/download/#section=windows "Pycharm")
 
 ## Special thanks
 
