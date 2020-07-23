@@ -1,6 +1,6 @@
 # Daily Python Practices
 
-[![Python Image](https://www.python.org/static/opengraph-icon-200x200.png "Python Image")](https://www.python.org/static/opengraph-icon-200x200.png "Python Image")
+[![Python Image](https://www.python.org/static/opengraph-icon-200x200.png "Python Image")](https://www.python.org "Python Image")
 
 I am learning python in videos of a basic class, and put here my exercises, which I practice every day.
 
