@@ -1,4 +1,4 @@
-#  Daily Python Practices
+<h1>Daily Python Practices<h1/>
 
 [![Python Image](https://www.python.org/static/opengraph-icon-200x200.png "Python Image")](https://www.python.org/static/opengraph-icon-200x200.png "Python Image")
 
@@ -10,7 +10,7 @@ I still don't know how to use all the tools and options on github, so I'm sorry,
 
 These files are my daily practices
 
-  ## Special thanks
+<h2>Special thanks<h2/>
 
 Special thanks to **Gustavo Guanabara** and his Python videos that have already taught me a lot.
 
