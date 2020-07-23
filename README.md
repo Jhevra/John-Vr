@@ -10,7 +10,9 @@ I still don't know how to use all the tools and options on github, so I'm sorry,
 
 These files are my daily practices.
 
-I used Pycharm Community Edition (From JetBrains) to make the exercises during the course.  
+I used Pycharm Community Edition (From JetBrains) to make the exercises during the course.
+
+[![Pycharm](https://resources.jetbrains.com/storage/products/pycharm-edu/img/meta/pycharm-edu_logo_300x300.png "Pycharm")](https://www.jetbrains.com/pt-br/pycharm/download/#section=windows "Pycharm")
 
 ## Special thanks
 
