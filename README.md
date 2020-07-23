@@ -10,7 +10,7 @@ I still don't know how to use all the tools and options on github, so I'm sorry,
 
 These files are my daily practices
 
-  ## Special thanks :tw-1f447:
+  ## Special thanks
 
 Special thanks to **Gustavo Guanabara** and his Python videos that have already taught me a lot.
 
