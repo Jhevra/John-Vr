@@ -18,4 +18,5 @@ I used Pycharm Community Edition (From JetBrains) to make the exercises during t
 
 Special thanks to **Gustavo Guanabara** and his Python videos that have already taught me a lot.
 
-And to everyone from **DIO** (Digital Innovation One)
+[![Curso em video](https://i.imgur.com/MwDKgpx.png?1 "Curso em video")](https://www.cursoemvideo.com "Curso em video")
+
