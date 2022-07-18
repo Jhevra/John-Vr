@@ -79,10 +79,7 @@ def voto(ano):
 
 
 def fatorial(valor=1, show=''):
-    if show == 'S':
-        show = True
-    else:
-        show = False
+    show = show == 'S'
 
     f = 1
     for valores in range(valor, 0, -1):
